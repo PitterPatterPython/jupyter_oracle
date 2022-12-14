@@ -9,7 +9,7 @@ import pandas as pd
 from collections import OrderedDict
 import requests
 from integration_core import Integration
-from pyodbc_core import Pyodbc
+from pyodbc_core.pyodbc_full import Pyodbc
 
 from IPython.core.magic import (Magics, magics_class, line_magic, cell_magic, line_cell_magic)
 from IPython.core.display import HTML
@@ -41,10 +41,6 @@ class Oracle(Pyodbc):
     # Make sure these are defined in myopts!
     custom_allowed_set_opts = ["oracle_conn_default"]
 
-
-
-    # These are the custom options for your integration    
-    myopts = {}
 
     # These are the custom options for your integration    
     myopts = {}
