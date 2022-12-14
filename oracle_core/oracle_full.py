@@ -10,7 +10,7 @@ from collections import OrderedDict
 import requests
 from integration_core import Integration
 from pyodbc_core.pyodbc_full import Pyodbc
-
+from oracle_core._version import __desc__
 from IPython.core.magic import (Magics, magics_class, line_magic, cell_magic, line_cell_magic)
 from IPython.core.display import HTML
 
