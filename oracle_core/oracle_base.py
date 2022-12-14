@@ -14,7 +14,7 @@ class Oracle(Magics):
 
 
     def __init__(self, shell, debug=False, *args, **kwargs):
-        super(Hive, self).__init__(shell, debug=debug)
+        super(Oracle, self).__init__(shell, debug=debug)
         self.debug = debug
 
         # Check namespace for integration and addon dicts
