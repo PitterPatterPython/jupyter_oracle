@@ -70,7 +70,7 @@ class Oracle(Pyodbc):
 # def customQuery - In pyodbc
 # def customHelp - In pyodbc
     def retCustomDesc(self):
-        return "Jupyter integration for working with Oracle RDBMS via PyODBC based data sources"
+        return __desc__
 
 
 
