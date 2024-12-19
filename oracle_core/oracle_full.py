@@ -10,9 +10,10 @@ from collections import OrderedDict
 import requests
 from integration_core import Integration
 from pyodbc_core.pyodbc_full import Pyodbc
-from oracle_core._version import __desc__
 from IPython.core.magic import (Magics, magics_class, line_magic, cell_magic, line_cell_magic)
 from IPython.core.display import HTML
+
+from oracle_core._version import __desc__
 
 #import IPython.display
 from IPython.display import display_html, display, Javascript, FileLink, FileLinks, Image
@@ -21,6 +22,7 @@ import ipywidgets as widgets
 # Put any additional imports specific to your integration here: 
 import pyodbc as po
 import jupyter_integrations_utility as jiu
+
 @magics_class
 class Oracle(Pyodbc):
     # Static Variables
